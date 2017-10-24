@@ -7,24 +7,26 @@
     body {
       font-family: 'Comfortaa', cursive;
       font-weight: lighter;
-      color: #f1f1ef;
+      color: #daad86;
       height: 100%;
       margin: 0px;
     }
     .firstSection {
       overflow: hidden;
-      background-color: #E37222;
+      background-color: white;
       position: relative;
       top: 0;
-      height: 500px;
+      height: 400px;
       width: 100%;
     }
     .secondSection {
-      background-color: #07889B;
+      background-color: #98dafc;
+      color: #312c32;
       top: 500px;
       height: 500px;
       width: 100%;
     }
+    /*
     .thirdSection {
       background-color: #66B9BF;
       top: 1000px;
@@ -36,6 +38,22 @@
       top: 1500px;
       height: 500px;
       width: 100%;
+    }*/
+    .footer {
+      position: absolute;
+      background-color: #98dafc;
+      color: #312c32;
+      bottom: 0;
+      height: 32px;
+      width: 100%;
+    }
+    .footer-text {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      text-align: center;
+      font-size: 10px;
     }
     .text {
       position: relative;
@@ -50,13 +68,38 @@
       font-size: 50px;
       margin: 5px;
     }
-    /*a:link, a:visited {
-      color: blue;
+    .footer-text a:link, a:visited {
+      color: #312c32;
+      text-decoration: none;
+    }
+    .footer-text img {
+      height: 15px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    /*.work {
+      display: inline-flex;
+      padding: 20px;
+    }
+    .polaroid {
+      width: 250px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      text-align: center;
+    }
+    .polaroid img {
+      position: relative;
+      top: 0;
+      height: 200px;
+      padding: 10px;
+    }
+    .container {
+      background: white;
+      bottom: 0px;
+      padding: 10px;
     }*/
     </style>
   </head>
   <body>
-
     <section>
       <div class = "firstSection">
         <div class = "text">
@@ -66,11 +109,34 @@
         </div>
        </div>
        <div class = "secondSection">
-         <div class = "text">
-           I develop things. I like memes. I love doggos.
-         </div>
+        <div class = "text">
+          I develop things.
+          <!-- <div class = "work">
+            <div class="polaroid">
+              <img src="src/transparent_logo.png" alt="Oxy Open Source"></img>
+              <div class="container">
+                <p>Oxy Open Source's Treasurer</p>
+              </div>
+            </div>
+            <div class="polaroid">
+              <img src="src/peer_advising.png" alt="Peer Advising"></img>
+              <div class="container">
+                <p>Occidental College's Computer Science Peer Advisor</p>
+              </div>
+            </div>
+          </div> -->
+          
         </div>
-        <div class = "thirdSection">
+       </div>
+       <!-- <div class = "footer">
+          <div class = "footer-text">
+             <a href="https://www.linkedin.com/in/angulostephanie/"><img src = "src/linkedin.png"></img></a>
+             <a href="https://github.com/angulostephanie"><img src = "src/github.png"></img></a>
+             <a href="mailto:angulostephanie21@gmail.com"><img src = "src/email.png"></img></a>
+          </div>
+       </div> -->
+
+        <!-- <div class = "thirdSection">
           <div class = "text">
             More stuff will go here.
           </div>
@@ -79,7 +145,7 @@
            <div class = "text">
              Even more stuff will go here.
            </div>
-          </div>
+          </div> -->
 
       <!-- <ul>
         <li>I code! Check out my <a href="https://github.com/angulostephanie">Github</a>.</li>

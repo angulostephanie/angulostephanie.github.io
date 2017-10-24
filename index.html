@@ -2,54 +2,90 @@
 <html>
 <head>
   <title>Stephanie Angulo</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Sacramento" rel="stylesheet">
   <style type="text/css">
-    html {
-      height: 100%;
-    }
     body {
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Comfortaa', cursive;
       font-weight: lighter;
+      color: #f1f1ef;
       height: 100%;
-      color: white;
       margin: 0px;
-      flex-direction: column-reverse;
-      display: flex;
     }
-    a:link, a:visited {
+    .firstSection {
+      overflow: hidden;
+      background-color: #E37222;
+      position: relative;
+      top: 0;
+      height: 500px;
+      width: 100%;
+    }
+    .secondSection {
+      background-color: #07889B;
+      top: 500px;
+      height: 500px;
+      width: 100%;
+    }
+    .thirdSection {
+      background-color: #66B9BF;
+      top: 1000px;
+      height: 500px;
+      width: 100%;
+    }
+    .fourthSection {
+      background-color: #EEAA7B;
+      top: 1500px;
+      height: 500px;
+      width: 100%;
+    }
+    .text {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      text-align: center;
+      font-size: 10px;
+    }
+    .cursive {
+      font-family: 'Sacramento', cursive;
+      font-size: 50px;
+      margin: 5px;
+    }
+    /*a:link, a:visited {
       color: blue;
-    }
-    section {
-      padding: 6px 12px;
-    }
-    img {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      width: 100%;
-      height: 100%;
-      z-index: -1000;
-    }
-    /*canvas[resize] {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      width: 100%;
-      height: 100%;
-      z-index: -1000;
     }*/
     </style>
   </head>
   <body>
 
     <section>
-      <img src="src/background.jpg" alt="Inspirational posters">
-      <h1>Hi, I'm Stephanie Angulo 👩🏽‍💻</h1>
-      <ul>
+      <div class = "firstSection">
+        <div class = "text">
+          hi, i'm
+          <p class = "cursive">Stephanie Angulo</p>
+          a developer.
+        </div>
+       </div>
+       <div class = "secondSection">
+         <div class = "text">
+           I develop things. I like memes. I love doggos.
+         </div>
+        </div>
+        <div class = "thirdSection">
+          <div class = "text">
+            More stuff will go here.
+          </div>
+         </div>
+         <div class = "fourthSection">
+           <div class = "text">
+             Even more stuff will go here.
+           </div>
+          </div>
+
+      <!-- <ul>
         <li>I code! Check out my <a href="https://github.com/angulostephanie">Github</a>.</li>
         <li>I love meeting new people! Connect with me on <a href="https://www.linkedin.com/in/angulostephanie/">LinkedIn</a>.</li>
         <li>I am open to new opportunties! Download my <a href="doc/stephanieangulo.pdf">resume</a>.</li>
-      </ul>
+      </ul> -->
     </section>
   </body>
   </html>

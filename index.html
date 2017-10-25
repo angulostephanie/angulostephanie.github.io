@@ -11,15 +11,20 @@
       height: 100%;
       margin: 0px;
     }
-    .firstSection {
+
+    .firstSection, .secondSection, .thirdSection, .fourthSection {
       overflow: hidden;
       background-color: white;
       position:relative;
       top: 0;
-      height: 400px;
+      height: 600px;
       width: 100%;
     }
-    .secondSection {
+
+    .firstSection .text:hover {
+      color: #daad86;
+    }
+    /*.secondSection {
       background-color: #98dafc;
       color: #312c32;
       top: 500px;
@@ -39,30 +44,17 @@
       top: 1500px;
       height: 500px;
       width: 100%;
-    }
-    .footer {
-      position: absolute;
-      background-color: #98dafc;
-      color: #312c32;
-      bottom: 0;
-      height: 32px;
-      width: 100%;
-    }
-    .footer-text {
-      position: relative;
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      text-align: center;
-      font-size: 10px;
-    }
+    }*/
     .text {
       position: relative;
       top: 50%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
       text-align: center;
-      font-size: 10px;
+      font-size: 12px;
+    }
+    .text:hover {
+      color: #98dafc;
     }
     .cursive {
       font-family: 'Sacramento', cursive;
@@ -73,10 +65,37 @@
       color: #312c32;
       text-decoration: none;
     }
-    .footer-text img {
-      height: 15px;
-      margin-left: 50px;
-      margin-right: 50px;
+    .navbar-content img {
+      width: 30px;
+      margin-top: 40px;
+    }
+    .navbar-content {
+      position: relative;
+      left: 50%;
+      transform: translateX(-35%) translateY(-5%);
+    }
+    .navbar {
+      position:fixed;
+      top: 50%;
+      left: 0%;
+      transform: translateY(-50%);
+      width: 40px;
+      z-index: 1;
+
+    }
+    hr {
+      width: 70%;
+      border: 0;
+      border-top: 1px solid #daad86;
+      box-shadow: 1px 3px 15px #c6c6c6;
+      padding: 0;
+    }
+    ul {
+      list-style-type: none;
+      text-align: center;
+      left: 0;
+      margin: 0;
+      padding: 0;
     }
     /*.work {
       display: inline-flex;
@@ -102,6 +121,15 @@
   </head>
   <body>
     <section>
+      <div class = "navbar">
+         <div class = "navbar-content">
+           <ul>
+             <li><a href="https://www.linkedin.com/in/angulostephanie/"><img src = "src/linkedin.png"></img></a></li>
+             <li><a href="https://github.com/angulostephanie"><img src = "src/github.png"></img></a></li>
+             <li><a href="mailto:angulostephanie21@gmail.com"><img src = "src/envelope.png"></img></a></li>
+          </ul>
+         </div>
+      </div>
       <div class = "firstSection">
         <div class = "text">
           hi, i'm
@@ -109,9 +137,10 @@
           and i love technology.
         </div>
        </div>
+       <hr></hr>
        <div class = "secondSection">
         <div class = "text">
-          I develop things.
+          i develop things.
           <!-- <div class = "work">
             <div class="polaroid">
               <img src="src/transparent_logo.png" alt="Oxy Open Source"></img>
@@ -129,30 +158,19 @@
 
         </div>
        </div>
-       <!-- <div class = "footer">
-          <div class = "footer-text">
-             <a href="https://www.linkedin.com/in/angulostephanie/"><img src = "src/linkedin.png"></img></a>
-             <a href="https://github.com/angulostephanie"><img src = "src/github.png"></img></a>
-             <a href="mailto:angulostephanie21@gmail.com"><img src = "src/email.png"></img></a>
-          </div>
-       </div> -->
-
+       <hr></hr>
          <div class = "thirdSection">
           <div class = "text">
-            More cool stuff will go here.
+            more cool stuff will go here.
           </div>
          </div>
+         <hr></hr>
          <div class = "fourthSection">
            <div class = "text">
-             Even more cool stuff will go here.
+             even more cool stuff will go here.
            </div>
           </div>
-
-      <!-- <ul>
-        <li>I code! Check out my <a href="https://github.com/angulostephanie">Github</a>.</li>
-        <li>I love meeting new people! Connect with me on <a href="https://www.linkedin.com/in/angulostephanie/">LinkedIn</a>.</li>
-        <li>I am open to new opportunties! Download my <a href="doc/stephanieangulo.pdf">resume</a>.</li>
-      </ul> -->
+        <hr></hr>
     </section>
   </body>
   </html>

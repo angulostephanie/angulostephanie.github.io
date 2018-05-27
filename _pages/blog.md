@@ -1,12 +1,12 @@
 ---
-title:  "Blogs"
-layout: archive
 permalink: /blog/
-author_profile: true
-comments: true
+title: "blog"
+author_profile: false
+layout: archive
 ---
 
-This is my blog page.
+My blog page litty
+
 {% for post in site.posts %}
   {% include archive-single.html %}
 {% endfor %}

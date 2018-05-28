@@ -2,7 +2,7 @@
 layout: splash
 permalink: /
 header:
-  overlay_image: "/assets/images/nice.jpg"
+  overlay_image: "https://github.com/angulostephanie/angulostephanie.github.io/blob/master/assets/images/nice.JPG?raw=true"
   overlay_filter: rgba(145, 145, 145, .5)
   caption: "Highland Park, California"
 excerpt: '<small> I build things and document moments.</small>'
@@ -21,6 +21,19 @@ feature_row:
     title: "User Research Intern"
     excerpt: "<small>Jan - May 2017</small><br/>
     During my sophomore spring semester, I was a full time student, as well as part time intern at NASA Jet Propulsion Laboratory. I worked under the Deep Space Network sector, analyzing their current alarm system designs for their DSN facilities."
+gallery:
+  - url: /assets/images/unsplash-gallery-image-1.jpg
+    image_path: /assets/images/unsplash-gallery-image-1-th.jpg
+    alt: "placeholder image 1"
+    title: "Image 1 title caption"
+  - url: /assets/images/unsplash-gallery-image-2.jpg
+    image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    alt: "placeholder image 2"
+    title: "Image 2 title caption"
+  - url: /assets/images/unsplash-gallery-image-3.jpg
+    image_path: /assets/images/unsplash-gallery-image-3-th.jpg
+    alt: "placeholder image 3"
+    title: "Image 3 title caption"
 intro:
   - excerpt: '[<i class="fa fa-download"></i> Download my resume](/resume.pdf){: .btn .btn--inverse .btn--large}'
 ---
@@ -30,7 +43,7 @@ intro:
   Here's a quick look at my most recent experiences.
 <p>
 {% include feature_row %}
-
+<!-- {% include gallery caption="This is a sample gallery with **Markdown support**." %} -->
 <h2 class = "noborder" style = "text-align: center">In the Media</h2>
 <p style = "text-align: center">
   <small>Here are a few articles I have been featured in and/or written.</small>

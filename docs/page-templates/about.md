@@ -12,11 +12,12 @@ layouts_gallery:
   - url: /assets/images/mm-layout-archive.png
     image_path: /assets/images/mm-layout-archive.png
     alt: "archive layout example"
+last_modified_at: 2018-04-10T08:41:35-04:00
 author_profile: true
 toc: false
 ---
 
-Hi there! I'm Stephanie, and this section of the website is currently under construction. :)
+Hi there! I'm Stephanie, and this website is currently underdevelopment. :)
 
 <!-- {% include gallery id="layouts_gallery" caption="Examples of included layouts `splash`, `single`, and `archive`." %}
 

@@ -64,12 +64,17 @@
 .page__lead {
   font-family: $global-font-family;
   font-size: $type-size-4;
+  margin-top: .5em;
 }
 
 .page__content {
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
+  }
+  .noborder {
+    padding-bottom: 0em;
+    border-bottom: 0px;
   }
 
   p,
@@ -136,7 +141,7 @@
   &--overlay {
     position: relative;
     margin-bottom: 2em;
-    padding: 3em 0;
+    padding: 7em 0;
     @include clearfix;
     background-size: cover;
     background-repeat: no-repeat;
@@ -173,7 +178,7 @@
 
     .page__title {
       font-size: $type-size-2;
-
+      margin-bottom: 0em;
       @include breakpoint($small) {
         font-size: $type-size-1;
       }

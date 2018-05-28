@@ -2,35 +2,61 @@
 layout: splash
 permalink: /
 header:
-  overlay_color: "#5e616c"
-  caption:
-excerpt: '<small>hello</small>'
+  overlay_image: "/assets/images/nice.jpg"
+  overlay_filter: rgba(145, 145, 145, .5)
+  caption: "Highland Park, California"
+excerpt: '<small> I build things and document moments.</small>'
 feature_row:
-  - image_path: /assets/images/test1.jpg
-    alt: "customizable"
-    title: "Super Customizable"
-    excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
-    url: "/docs/configuration/"
-    btn_class: "btn--primary"
-    btn_label: "Learn More"
-  - image_path: /assets/images/test2.jpg
-    alt: "fully responsive"
-    title: "Responsive Layouts"
-    excerpt: "Built on HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
-    url: "/docs/layouts/"
-    btn_class: "btn--primary"
-    btn_label: "Learn More"
-  - image_path: /assets/images/test3.jpg
-    alt: "100% free"
-    title: "100% Free"
-    excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it, whatever!"
-    url: "/docs/license/"
-    btn_class: "btn--primary"
-    btn_label: "Learn More"
+  - image_path: /assets/images/oxy.png
+    alt: "Computer Science Student"
+    title: "Computer Science Student"
+    excerpt: "<small>August 2015 – Present</small><br/>Aside from being a computer science major at Oxy, I am also the vice president of the college's computer science club, a computer science tutor, and an artificial intelligence research assistant."
+  - image_path: /assets/images/fb.png
+    alt: "Software Engineering Intern"
+    title: "<small>3x</small> Software Engineering Intern"
+    excerpt: "<small>Summers 2016, 2017, and 2018</small><br/>
+    I have been a Facebook intern for the last three summers. These past two summers, I have participated in Facebook University for Engineers and worked under Messenger Rich Media. This summer, I will be working under the Location Infra team, dealing with iOS and machine learning."
+  - image_path: /assets/images/nasa.png
+    alt: "User Research Intern"
+    title: "User Research Intern"
+    excerpt: "<small>Jan - May 2017</small><br/>
+    During my sophomore spring semester, I was a full time student, as well as part time intern at NASA Jet Propulsion Laboratory. I worked under the Deep Space Network sector, analyzing their current alarm system designs for their DSN facilities."
 intro:
-  - excerpt: '[<i class="fa fa-download"></i> Download my resume](/assets/files/resume.pdf){: .btn .btn--info}'
+  - excerpt: '[<i class="fa fa-download"></i> Download my resume](/resume.pdf){: .btn .btn--inverse .btn--large}'
 ---
 
 {% include feature_row id="intro" type="center" %}
-
+<p style= "text-align: center">
+  Here's a quick look at my most recent experiences.
+<p>
 {% include feature_row %}
+
+<h2 class = "noborder" style = "text-align: center">In the Media</h2>
+<p style = "text-align: center">
+  <small>Here are a few articles I have been featured in and/or written.</small>
+  <br/>
+
+  <small>
+    <a href = "https://www.oxy.edu/our-story/oxy-people/stephanie-angulo-19" target="_blank">Occidental College - 'Stephanie Angulo '19 - Oxy Student Story' March 2018</a>
+  </small>
+  <br/>
+  <small>
+    <a href = "https://medium.freecodecamp.org/top-tips-for-technical-interviews-from-9-of-instagrams-tech-girls-9d1b576bc287#9d92" target="_blank">Medium Article - 'Top tips for technical interviews from nine of Instagram’s tech girls' March 2018</a>
+  </small>
+  <br/>
+  <small>
+    <a href = "http://www.latimes.com/local/lanow/la-me-occidental-computer-science-20180313-story.html" target= "_blank" >Los Angeles Times – 'A new kind of computer science major delves into how technology is reshaping society' March 2018</a>
+  </small>
+  <br/>
+  <small>
+    <a href = "http://www.uscannenbergmedia.com/2018/02/26/usc-all-female-hackathon-concludes-its-second-year/" target="_blank">USC Annenberg Media – 'USC all-female hackathon concludes its second year' Feb. 2018</a>
+  </small>
+  <br/>
+  <small>
+    <a href = "https://www.oxy.edu/campus-conversations/student-voices/reaching-stars-jpl" target="_blank">Occidental College - 'Reaching for the Stars (With JPL)' Feb. 2017</a>
+  </small>
+  <br/>
+  <small>
+    <a href = "http://www.sonomanews.com/news/5501827-181/stephanies-angulo-from-google" target="_blank">Sonoma Index Tribune - 'Sonoma Valley High student gets dream internship at Facebook' April 2016</a>
+  </small>
+<p>

@@ -96,3 +96,8 @@
     font-size: $type-size-7;
   }
 }
+
+.btn--inverse:hover {
+  background-color: #ccc;
+  color: #494e52;
+}

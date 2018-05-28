@@ -68,7 +68,9 @@
   overflow: hidden;
 
   img {
-    width: 100%;
+    height: 5em;
+    display: block;
+    margin: auto;
   }
 }
 
@@ -344,7 +346,9 @@
     font-size: 1em;
   }
 }
-
+.feature__item--center {
+  text-align: center;
+}
 /*
    Wide Pages
    ========================================================================== */

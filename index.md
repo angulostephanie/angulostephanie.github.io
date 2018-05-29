@@ -2,7 +2,7 @@
 layout: splash
 permalink: /
 header:
-  overlay_image: "https://github.com/angulostephanie/angulostephanie.github.io/blob/master/assets/images/nice.JPG?raw=true"
+  overlay_image: "/assets/images/header.jpg"
   overlay_filter: rgba(145, 145, 145, .5)
   caption: "Highland Park, California"
 excerpt: '<small> I build things and document moments.</small>'

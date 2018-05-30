@@ -6,7 +6,7 @@ if(typeof window.orientation !== 'undefined') {
           resolution: 'standard_resolution',
           accessToken: '6333322427.a6949a5.f97f929743ed4b6a99d157330e9e1809',
           sortBy:'most-recent',
-          limit: 3,
+          limit: 6,
           after: function(){
             $( "#instafeed a" ).attr("target", "_blank");
           }

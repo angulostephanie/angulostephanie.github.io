@@ -20,6 +20,7 @@ toc: false
 Hi there! I'm Stephanie, and this section of the website is currently under construction. :)
 
 {% include instagram.html %}
+{% include medialinks.html %}
 
 <!-- {% include gallery id="layouts_gallery" caption="Examples of included layouts `splash`, `single`, and `archive`." %}
 

@@ -6,6 +6,6 @@ layout: archive
 ---
 There aren't any published blog posts yet, come back later! :)
 
-<!-- {% for post in site.posts %}
+{% for post in site.posts %}
   {% include archive-single.html %}
-{% endfor %} -->
+{% endfor %}

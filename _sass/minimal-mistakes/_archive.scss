@@ -48,7 +48,7 @@
 /* remove border*/
 .page__content {
   .archive__item-title {
-    margin-top: 1em;
+    margin-top: .5em;
     border-bottom: none;
   }
 }
@@ -68,7 +68,7 @@
   overflow: hidden;
 
   img {
-    height: 5em;
+    height: 100%;
     display: block;
     margin: auto;
   }

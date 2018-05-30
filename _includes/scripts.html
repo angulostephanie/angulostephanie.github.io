@@ -8,7 +8,11 @@
     <script src="{{ script_path }}"></script>
   {% endfor %}
 {% else %}
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="{{ '/assets/js/jquery-3.3.1.min.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/instafeed.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/insta.js' | relative_url }}"></script>
   <script src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
 {% endif %}
 

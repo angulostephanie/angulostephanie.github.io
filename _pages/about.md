@@ -1,6 +1,7 @@
 ---
 permalink: /about/
 title: "about"
+classes: wide
 excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
 layouts_gallery:
   - url: /assets/images/mm-layout-splash.png
@@ -17,6 +18,8 @@ toc: false
 ---
 
 Hi there! I'm Stephanie, and this section of the website is currently under construction. :)
+
+{% include instagram.html %}
 
 <!-- {% include gallery id="layouts_gallery" caption="Examples of included layouts `splash`, `single`, and `archive`." %}
 

@@ -4,6 +4,7 @@ main:
     url: /about/
   - title: "blog"
     url: /blog/
+    
   # - title: "highlights"
   #   url: /highlights/
   # - title: "Sitemap"

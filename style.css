@@ -14,8 +14,7 @@ body {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, 0);
-  padding: .5em;
-  padding-top: .7em;
+  padding-top: .6em;
 }
 
 #title2 {
@@ -27,6 +26,11 @@ body {
 a {
   text-decoration: none;
   font-weight: bold;
+  color: #0084b4;
+}
+
+a:visited {
+  color: #0084b4;
 }
 
 .section {
@@ -40,17 +44,15 @@ a {
 
 #test {
   padding: 10%;
-  /* padding-top: 35%;
-  padding-bottom: 35%; */
-  margin-top: 35%;
-  margin-bottom: 35%;
 }
 #bio {
   text-align: left;
   font-size: 1.3em;
 }
 #resume {
-
+  border:thin solid #0084b4;
+  border-radius: 5px;
+  padding: 2px 5px 2px 5px;
 }
 .footer {
   position:absolute;

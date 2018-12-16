@@ -8,24 +8,25 @@ body {
 }
 
 .header {
-  position:absolute;
-  font-size: 50px;
+  position: absolute;
+  font-size: 3.5em;
   top: 0;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, 0);
-  padding: .7em;
-  z-index: 1;
+  padding: .5em;
+  padding-top: .7em;
 }
 
 #title2 {
   padding-left: 10px;
-  font-weight:bold;
+  font-weight: bold;
   color: #3d3d3f;
 }
 
 a {
   text-decoration: none;
+  font-weight: bold;
 }
 
 .section {
@@ -34,22 +35,26 @@ a {
  left: 50%;
  margin-right: -50%;
  transform: translate(-50%, -50%);
- z-index: -1000;
  width: 100%;
 }
 
 #test {
-  padding-left: 20%;
-  padding-right: 20%;
+  padding: 10%;
+  /* padding-top: 35%;
+  padding-bottom: 35%; */
+  margin-top: 35%;
+  margin-bottom: 35%;
 }
 #bio {
   text-align: left;
+  font-size: 1.3em;
 }
 #resume {
 
 }
 .footer {
   position:absolute;
+  font-size: 1.2em;
   bottom: 0;
   left: 50%;
   margin-right: -50%;

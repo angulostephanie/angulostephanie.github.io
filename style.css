@@ -108,9 +108,17 @@ a:visited {
   position: fixed;
 }
 
-@media (max-width: 812px) {
+@media (max-width: 900px) {
   #inner {
     margin-left: 7%;
     margin-right: 7%;
+  }
+}
+
+@media (min-width: 1681px) {
+  #inner {
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: red;
   }
 }

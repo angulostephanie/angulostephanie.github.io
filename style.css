@@ -1,65 +1,119 @@
+html {
+  width: 100%;
+  height: 100%;
+}
 body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #fefefd;
-  text-align: center;
+  margin: 0;
+}
+
+#container {
   width: 100%;
   height: 100%;
-  margin: 0px;
 }
 
 .header {
-  position: absolute;
-  font-size: 3.5em;
+  font-size: 4em;
   top: 0;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, 0);
+  text-align: center;
   padding-top: .6em;
 }
 
 #title2 {
-  padding-left: 10px;
+  padding-left: 20px;
   font-weight: bold;
   color: #3d3d3f;
 }
 
+.section {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+#inner {
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(50%, 0%);
+  width: 50%;
+}
+
+p {
+  margin: 0;
+  padding-top: 5px;
+}
+
+b {
+  color: #3d3d3f;
+}
+
+
+#greetings, .bio-title, .bio {
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.bio-title {
+  font-size: 1.4em;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  /* border-bottom: 1px solid #4c70ba; */
+  width:150px;
+}
+#greetings, #more {
+  font-size: 2em;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  text-align: center;
+}
+#greetings {
+  font-size: 2.5em;
+  font-style: italic;
+}
+/* #resume {
+  font-size: 2.5em;
+  padding: 2px 5px 2px 5px;
+} */
+/* border:thin solid #3b5998;
+border-radius: 5px; */
 a {
   text-decoration: none;
   font-weight: bold;
-  color: #0084b4;
-}
+  color: #4c70ba;
 
+}
+a:hover {
+  color: #4c70ba;
+}
 a:visited {
-  color: #0084b4;
+  color: #4c70ba;
 }
 
-.section {
- position: absolute;
- top: 50%;
- left: 50%;
- margin-right: -50%;
- transform: translate(-50%, -50%);
- width: 100%;
+.feat {
+  color: #3d3d3f;
+  font-weight: normal;
 }
-
-#test {
-  padding: 10%;
+/* #feat1 {
+  padding-left: 0px;
+} */
+.feat:visited {
+  color: #3d3d3f;
 }
-#bio {
-  text-align: left;
-  font-size: 1.3em;
-}
-#resume {
-  border:thin solid #0084b4;
-  border-radius: 5px;
-  padding: 2px 5px 2px 5px;
+.feat:hover {
+  color: #4c70ba;
+  font-weight: bold;
 }
 .footer {
-  position:absolute;
-  font-size: 1.2em;
-  bottom: 0;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, 0);
-  padding-bottom: 1em;
+  background-color: #fefefd;
+  text-align: center;
+  z-index: 1000;
+  font-size: 1.3em;
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+  padding-top: 1em;
+  position: fixed;
+  /* left: 50%; */
+  /* margin-right: -50%; */
+  /* transform: translate(-50%, 0); */
 }

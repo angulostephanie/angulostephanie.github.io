@@ -2,9 +2,9 @@
 :root {
   /* Colors */
   --background:#e4e3e3;
-  --header:#84a9ac;
-  --links:#3b6978;
   --bold:#204051;
+  --links:#3b6978;
+  --accent:#84a9ac;
   --defaultColor:#1b262c;
 
   /* Font sizes */
@@ -12,6 +12,7 @@
   --tagLineSize: 2.5em;
   --sectiontitleSize: 1.8em;
   --defaultSize: 1.5em;
+  --ctaSize: 2em;
   --footerSize: 1.3em;
 
 }
@@ -25,8 +26,8 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: var(--background);
   color: var(--defaultColor);
-  text-align: left;
   font-size: var(--defaultSize);
+  text-align: left;
   margin: 0;
   width: 100%;
   height: 100%;
@@ -58,7 +59,7 @@ a:visited {
 }
 
 a:hover {
-  color: var(--header);
+  color: var(--accent);
 }
 
 .header {
@@ -78,9 +79,9 @@ a:hover {
 
 .section-title {
   font-size: var(--sectiontitleSize);
+  color: var(--defaultColor);
   margin-top: 25px;
   font-style: bold;
-  color: var(--defaultColor);
 }
 
 .main {
@@ -116,22 +117,21 @@ a:hover {
   font-style: bold;
 }
 
-#tagline, #more {
+#tagline, #cta {
   padding-bottom: 70px;
   padding-top: 70px;
   text-align: center;
 }
 
-#more {
-  font-size: 2em;
+#cta {
+  font-size: var(--ctaSize);
 }
 
 #descriptor {
-  color:var(--header);
+  color:var(--accent);
 }
 
-
-
+/* TODO: make these media rules more concise */
 @media (max-width: 900px) {
   .main {
     margin-left: 7%;
@@ -183,6 +183,7 @@ a:hover {
     margin-right: 11%;
   }
 }
+
 @media (max-width: 1025px) and (height: 1366px) {
   .header {
     font-size: 4.5em;
@@ -198,7 +199,7 @@ a:hover {
     font-size: 1.6em;
   }
 
-  #more {
+  #cta {
     padding-top: 125px;
   }
 }

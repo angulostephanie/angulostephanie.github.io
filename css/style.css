@@ -1,32 +1,72 @@
 
+:root {
+  /* Colors */
+  --background:#e4e3e3;
+  --header:#84a9ac;
+  --bold:#3b6978;
+  --links:#204051;
+  --defaultColor:#1b262c;
+
+  /* Font sizes */
+  --titleSize: 4em;
+  --tagLineSize: 2.5em;
+  --sectiontitleSize: 1.8em;
+  --defaultSize: 1.5em;
+  --footerSize: 1.3em;
+
+}
+
 html {
   width: 100%;
   height: 100%;
 }
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #fefefd;
+  background-color: var(--background);
+  color: var(--defaultColor);
+  text-align: left;
+  font-size: var(--defaultSize);
   margin: 0;
 }
 
-#container {
-  width: 100%;
-  height: 100%;
+p {
+  margin: 0;
+  padding-top: 15px;
+}
+
+b {
+  color: var(--bold);
+}
+
+span {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--links);
+
+}
+
+a:visited {
+  color: var(--links);
+}
+
+a:hover {
+  color: var(--header);
 }
 
 .header {
-  font-size: 4em;
+  font-size: var(--titleSize);
   top: 0;
   text-align: center;
-  padding-top: .9em;
-  margin-left: 12px;
-  margin-right: 12px;
-}
+  padding-top: 1em;
+  margin-left: 20px;
+  margin-right: 20px;
 
-#title2 {
-  padding-left: 3px;
-  font-weight: bold;
-  color: #3d3d3f;
 }
 
 .section {
@@ -34,79 +74,26 @@ body {
   margin-bottom: 60px;
 }
 
-#inner {
-  margin-left: 22%;
-  margin-right: 22%;
+.section-title {
+  font-size: var(--sectiontitleSize);
+  margin-top: 25px;
+  font-style: bold;
+  color: var(--defaultColor);
 }
 
-p {
-  margin: 0;
-  padding-top: 13px;
-}
-
-b {
-  color: #3d3d3f;
-}
-
-
-#greetings, .bio-title, .bio {
-  text-align: left;
-  font-size: 1.2em;
-}
-
-.bio-title {
-  font-size: 1.4em;
-  margin-top: 17px;
-  font-style: italic;
-}
-#greetings, #more {
-  font-size: 2em;
-  padding-bottom: 47px;
-  padding-top: 47px;
-  text-align: center;
-}
-
-#greetings {
-  font-size: 2.5em;
-  font-style: italic;
-}
-
-a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #4c70ba;
-
-}
-a:hover {
-  color: #4c70ba;
-}
-a:visited {
-  color: #4c70ba;
-}
 
 .feat {
-  color: #3d3d3f;
-  font-weight: normal;
-  padding-bottom: .7px;
-  border-bottom: 1px dashed #4c70ba;
-}
-span {
-  padding-left: 5px;
-  padding-right: 5px;
+  color: var(--links);
+  font-weight: bold;
+  padding-bottom: .5px;
+  border-bottom: .5px dashed var(--header);
 }
 
-.feat:visited {
-  color: #3d3d3f;
-}
-.feat:hover {
-  color: #4c70ba;
-  font-weight: bold;
-}
 .footer {
-  background-color: #fefefd;
+  background-color: var(--background);
   text-align: center;
   z-index: 1000;
-  font-size: 1.2em;
+  font-size: 1.3em;
   bottom: 0px;
   width: 100%;
   height: 50px;
@@ -115,6 +102,62 @@ span {
   position: fixed;
 }
 
+#container {
+  width: 100%;
+  height: 100%;
+}
+
+#title {
+  font-weight: bold;
+}
+
+#inner {
+  margin-left: 22%;
+  margin-right: 22%;
+}
+
+#greetings, #more {
+  padding-bottom: 70px;
+  padding-top: 70px;
+  text-align: center;
+}
+
+#more {
+  font-size: 2em;
+}
+
+#greetings {
+  font-size: var(--tagLineSize);
+  font-style: bold;
+}
+
+#descriptor {
+  color:var(--header);
+}
+
+
+@media (max-width: 515px) {
+  .header {
+    font-size: 3em;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+  #greetings {
+    font-size: 2.2em;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  .section-title {
+    font-size: 1.5em;
+  }
+
+  #inner {
+    font-size: 1em;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+}
 @media (max-width: 900px) {
   #inner {
     margin-left: 7%;
@@ -132,14 +175,17 @@ span {
   .header {
     font-size: 4.5em;
   }
+
   #inner {
     margin-left: 15%;
     margin-right: 15%;
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
+
   .footer {
     font-size: 1.6em;
   }
+
   #more {
     padding-top: 125px;
   }

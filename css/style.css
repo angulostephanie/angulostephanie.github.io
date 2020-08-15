@@ -82,11 +82,11 @@ a:hover {
 }
 
 
-.feat {
+.article {
   color: var(--links);
   font-weight: bold;
   padding-bottom: .5px;
-  border-bottom: .5px dashed var(--header);
+  /* border-bottom: .5px dashed var(--header); */
 }
 
 .footer {

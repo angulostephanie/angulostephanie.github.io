@@ -28,6 +28,8 @@ body {
   text-align: left;
   font-size: var(--defaultSize);
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 p {
@@ -81,42 +83,40 @@ a:hover {
   color: var(--defaultColor);
 }
 
+.main {
+  margin-left: 22%;
+  margin-right: 22%;
+}
 
 .article {
   color: var(--links);
   font-weight: bold;
   padding-bottom: .5px;
-  /* border-bottom: .5px dashed var(--header); */
 }
 
 .footer {
   background-color: var(--background);
+  font-size: var(--footerSize);
   text-align: center;
   z-index: 1000;
-  font-size: 1.3em;
   bottom: 0px;
   width: 100%;
   height: 50px;
-  padding-top: 1em;
-  padding-bottom: .3em;
+  padding-top: .6em;
+  padding-bottom: .6em;
   position: fixed;
-}
-
-#container {
-  width: 100%;
-  height: 100%;
 }
 
 #title {
   font-weight: bold;
 }
 
-#inner {
-  margin-left: 22%;
-  margin-right: 22%;
+#tagline {
+  font-size: var(--tagLineSize);
+  font-style: bold;
 }
 
-#greetings, #more {
+#tagline, #more {
   padding-bottom: 70px;
   padding-top: 70px;
   text-align: center;
@@ -126,15 +126,18 @@ a:hover {
   font-size: 2em;
 }
 
-#greetings {
-  font-size: var(--tagLineSize);
-  font-style: bold;
-}
-
 #descriptor {
   color:var(--header);
 }
 
+
+
+@media (max-width: 900px) {
+  .main {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+}
 
 @media (max-width: 515px) {
   .header {
@@ -143,30 +146,39 @@ a:hover {
     margin-right: 7%;
   }
 
-  #greetings {
+  #tagline {
     font-size: 2.2em;
     margin-left: 7%;
     margin-right: 7%;
   }
+
   .section-title {
     font-size: 1.5em;
   }
 
-  #inner {
+  .main {
     font-size: 1em;
     margin-left: 7%;
     margin-right: 7%;
   }
+
+  .footer {
+    font-size: 1.1em;
+  }
 }
-@media (max-width: 900px) {
-  #inner {
-    margin-left: 7%;
-    margin-right: 7%;
+
+@media (max-width:340px) {
+  .header {
+    font-size: 2.5em;
+  }
+
+  #tagline {
+    font-size: 2em;
   }
 }
 
 @media (min-width: 901px) {
-  #inner {
+  .main {
     margin-left: 11%;
     margin-right: 11%;
   }
@@ -176,7 +188,7 @@ a:hover {
     font-size: 4.5em;
   }
 
-  #inner {
+  .main {
     margin-left: 15%;
     margin-right: 15%;
     font-size: 1.5em;
@@ -192,28 +204,28 @@ a:hover {
 }
 
 @media (min-width: 1050px) {
-  #inner {
+  .main {
     margin-left: 17%;
     margin-right: 17%;
   }
 }
 
 @media (min-width: 1200px) {
-  #inner {
+  .main {
     margin-left: 23%;
     margin-right: 23%;
   }
 }
 
 @media (min-width: 1681px) {
-  #inner {
+  .main {
     margin-left: 27%;
     margin-right: 27%;
   }
 }
 
 @media (min-width: 2000px) {
-  #inner {
+  .main {
     margin-left: 33%;
     margin-right: 33%;
   }

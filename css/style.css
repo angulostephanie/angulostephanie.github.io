@@ -131,7 +131,7 @@ a:hover {
   color:var(--accent);
 }
 
-/* TODO: make these media rules more concise */
+/* todo: make these media rules more concise */
 @media (max-width: 900px) {
   .main {
     margin-left: 7%;

@@ -8,9 +8,9 @@
   --defaultColor:#1b262c;
 
   /* Font sizes */
-  --titleSize: 4em;
+  --headerSize: 4em;
   --tagLineSize: 2.5em;
-  --sectiontitleSize: 1.8em;
+  --sectionTitleSize: 1.8em;
   --defaultSize: 1.5em;
   --ctaSize: 2em;
   --footerSize: 1.3em;
@@ -61,12 +61,12 @@ a:hover {
 }
 
 .header {
-  font-size: var(--titleSize);
+  font-size: var(--headerSize);
   top: 0;
   text-align: center;
   padding-top: 1em;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
 
 }
 
@@ -76,15 +76,15 @@ a:hover {
 }
 
 .section-title {
-  font-size: var(--sectiontitleSize);
+  font-size: var(--sectionTitleSize);
   color: var(--defaultColor);
   margin-top: 25px;
   font-style: bold;
 }
 
 .main {
-  margin-left: 22%;
-  margin-right: 22%;
+  margin-left: 23%;
+  margin-right: 23%;
 }
 
 .article {
@@ -111,7 +111,8 @@ a:hover {
 
 #tagline {
   font-size: var(--tagLineSize);
-  font-style: bold;
+  margin-left: 35px;
+  margin-right: 35px;
 }
 
 #tagline, #cta {
@@ -128,42 +129,77 @@ a:hover {
   color:var(--accent);
 }
 
-/* todo: make these media rules more concise */
-@media (max-width: 900px) {
-  .main {
-    margin-left: 7%;
-    margin-right: 7%;
-  }
-}
-
-@media (max-width: 515px) {
+/* Adjusting for tablets */
+@media (max-width: 1380px) {
   .header {
-    font-size: 3em;
-    margin-left: 7%;
-    margin-right: 7%;
-  }
-
-  #tagline {
-    font-size: 2.2em;
-    margin-left: 7%;
-    margin-right: 7%;
-  }
-
-  .section-title {
-    font-size: 1.5em;
+    font-size: 4.5em;
   }
 
   .main {
-    font-size: .8em;
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 1.1em;
   }
 
   .footer {
-    font-size: .8em;
+    font-size: 1.6em;
   }
 }
 
+@media (max-width: 901px) {
+  .main {
+    margin-left: 11%;
+    margin-right: 11%;
+  }
+}
+
+/*
+  Most smartphones:
+  iPhone 6 and above
+  All(?) Pixels
+  Galaxy S5 and above
+*/
+@media (max-width: 515px) {
+  :root {
+    /* Font sizes */
+    --mHeaderSize: 2.9em;
+    --mTagLineSize: 2.2em;
+    --mSectionTitleSize: 1.5em;
+    --mDefaultSize: .8em;
+    --mCTASize: 2em;
+    --mFooterSize: .8em;
+
+    /* Margins */
+    --mMarginPercentage: 7%;
+  }
+
+  .header {
+    font-size: var(--mHeaderSize);
+  }
+
+  #tagline {
+    font-size: var(--mTagLineSize);
+  }
+
+  .section-title {
+    font-size: var(--mSectionTitleSize);
+  }
+
+  .main {
+    font-size: var(--mDefaultSize);
+  }
+
+  .footer {
+    font-size: var(--mFooterSize);
+  }
+
+  .header, .main, #tagline {
+    margin-left: var(--mMarginPercentage);
+    margin-right: var(--mMarginPercentage);
+  }
+}
+
+/* iPhone 5/SE, Galaxy Fold */
 @media (max-width:340px) {
   .header {
     font-size: 2.3em;
@@ -174,57 +210,46 @@ a:hover {
   }
 }
 
-@media (min-width: 901px) {
+/* Adjusting for different monitors */
+@media (min-width: 1550px) {
   .main {
-    margin-left: 11%;
-    margin-right: 11%;
+    margin-left: 25%;
+    margin-right: 25%;
   }
 }
 
-@media (max-width: 1025px) and (height: 1366px) {
-  .header {
-    font-size: 4.5em;
-  }
-
-  .main {
-    margin-left: 15%;
-    margin-right: 15%;
-    font-size: 1.5em;
-  }
-
-  .footer {
-    font-size: 1.6em;
-  }
-
-  #cta {
-    padding-top: 125px;
-  }
-}
-
-@media (min-width: 1050px) {
-  .main {
-    margin-left: 17%;
-    margin-right: 17%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .main {
-    margin-left: 23%;
-    margin-right: 23%;
-  }
-}
-
-@media (min-width: 1681px) {
+@media (min-width: 1800px) {
   .main {
     margin-left: 27%;
     margin-right: 27%;
   }
 }
 
+
 @media (min-width: 2000px) {
+  .main {
+    margin-left: 29%;
+    margin-right: 29%;
+  }
+}
+
+@media (min-width: 2250px) {
+  .main {
+    margin-left: 31%;
+    margin-right: 31%;
+  }
+}
+
+@media (min-width: 2500px) {
   .main {
     margin-left: 33%;
     margin-right: 33%;
+  }
+}
+
+@media (min-width: 2700px) {
+  .main {
+    margin-left: 36%;
+    margin-right: 36%;
   }
 }

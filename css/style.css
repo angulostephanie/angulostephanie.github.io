@@ -100,8 +100,8 @@ a:hover {
   z-index: 1000;
   width: 100%;
   bottom: 0px;
-  padding-top: 1.1em;
-  padding-bottom: 1.1em;
+  padding-top: 1.3em;
+  padding-bottom: 1.3em;
   position: fixed;
 }
 
@@ -116,8 +116,10 @@ a:hover {
 }
 
 #tagline, #cta {
-  padding-bottom: 60px;
-  padding-top: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
